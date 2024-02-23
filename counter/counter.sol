@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.22;
+pragma solidity 0.8.19;
 
 
 contract Example {
@@ -44,6 +44,7 @@ contract Example {
     }
      // New function to get the description
     function getDescription() public view returns (string memory) {
+        string memory description = counter.description;
         return description;
     }
 }
